@@ -1,6 +1,7 @@
 html, body {
 	height: 100%;
 	width: 100%;
+	background: black;
 }
 
 .page {
@@ -25,4 +26,33 @@ html, body {
 	margin: auto;
 	height: 50%;
 	vertical-align: middle;
+}
+
+.shop {
+	font-family: 'Knewave', serif;
+	float: left;
+    text-align: center;
+    width: 100%;
+    position: absolute; 
+    color: white;
+    font-size: 120px;
+    bottom: 200px;
+}
+
+@media only screen and (max-height: 600px) {
+    .shop {
+        font-size: 24px;
+        bottom: 12px;
+    }
+}
+
+@media only screen and (min-height: 600px) and (max-height: 900px) {
+    .shop {
+        font-size: 34px;
+        bottom: 32px;
+    }
+}
+
+.shop a:link, .shop a:hover, .shop a:visited, .shop a:active {
+	color: white;
 }
